@@ -1,0 +1,53 @@
+/* Ayah Ghazouli / 09.17.2025 */
+/* Source: JavaScript30 by Wes Bos */
+/* New: Bink-style colors and scoped CSS variables */
+
+:root {
+  --spacing: 10px;
+  --blur: 10px;
+  --base: #ff69b4; /* Hot pink */
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(to right, #ffb6c1, #dda0dd); /* light pink to lavender */
+  color: #fff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+  border: 2px solid #ff69b4;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ff69b4;
+}
+
+.hl {
+  color: #ff1493; /* Deep pink */
+}
+:root {
+  --spacing: 10px;
+  --blur: 10px;
+  --base: #ff69b4;
+  --img-width: 80%;
+}
+
+img {
+  width: var(--img-width);
+  max-width: 800px;
+  height: auto;
+}
